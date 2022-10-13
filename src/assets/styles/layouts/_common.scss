@@ -1,0 +1,41 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: $body-font;
+  color: $black;
+  font-size: $body-font-size;
+}
+a {
+  text-decoration: none;
+  @include transition(0.3s);
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+button {
+  @include transition(0.3s);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  letter-spacing: -0.01em;
+  margin: 0;
+  @media #{$xs} {
+    letter-spacing: -0.02em;
+  }
+}
+input::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: #B9B9C3;
+}
+.required {
+  color: #EA5455;
+}
